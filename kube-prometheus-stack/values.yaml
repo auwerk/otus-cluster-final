@@ -31,3 +31,9 @@ prometheus:
             replacement: $1:$2
             source_labels: [ __address__, __meta_kubernetes_pod_annotation_prometheus_io_port ]
             target_label: __address__
+grafana:
+  ingress:
+    enabled: true
+    hosts:
+      - arch.homework
+    path: /grafana
